@@ -1,0 +1,96 @@
+/* Reset some basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  /* Header and navigation */
+  header {
+    background-color: rgb(202, 190, 155);
+    padding: 20px;
+  }
+  
+  .nav-menu {
+    list-style:circle;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .nav-menu li {
+    margin: 0 20px;
+  }
+  
+  .nav-menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-menu a:hover {
+    color: #FFD700;
+  }
+  .main {
+    padding: 40px;
+  }
+  /* تنظیمات بخش منو */
+.menu-section {
+  background-color: #f9f9f9;
+  padding: 20px;
+  text-align: center;
+}
+.menu-item {
+  margin: 20px auto;
+  padding: 15px;
+  border: 1px solid #ddd;
+  background-color: white;
+  max-width: 400px;
+}
+
+.menu-item h2 {
+  color: #333;
+}
+
+.menu-item p {
+  color: #666;
+}
+
+
+  /* Main section */
+  main {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f4f4;
+    padding: 40px;
+    text-align: center;
+  }
+  
+  main h1 {
+    font-size: 2.5rem;
+    color: rgb(202, 190, 155);
+  }
+  
+  main p {
+    font-size: 1.2rem;
+    color: #666;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: rgb(202, 190, 155);
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+  }
+  

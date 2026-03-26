@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: rgb(202, 190, 155);
+
+}
+main .features {
+    
+    display: flex;
+    justify-content: center; /* وسط‌چین کردن افقی */
+    align-items: center; /* وسط‌چین کردن عمودی (در صورت نیاز) */
+    gap: 20px; /* فاصله بین ستون‌ها */
+    padding: 20px;
+}
+
+main .features .feature {
+    flex: 1; /* باعث می‌شود ستون‌ها به اندازه مساوی باشند */
+    max-width: 300px; /* کنترل عرض ستون‌ها */
+    text-align: center; /* وسط‌چین کردن متن داخل هر ستون */
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: center; /* مرکز کردن افقی */
+    align-items: center; /* مرکز کردن عمودی */
+    padding: 16px;
+    background-color: rgb(202, 190, 155);
+    color: rgba(73, 113, 53, 0.529);
+    flex-direction: column; /* چیدن لوگو و منو به صورت ستونی */
+}
+.banner {
+    background-image: url('P1.jpg'); /* قرار دادن تصویر پس‌زمینه */
+    background-size: cover; /* تنظیم اندازه تصویر برای پوشش کامل */
+    background-position: center;
+    color: rgb(141, 159, 95); /* رنگ متن */
+    padding: 25px 10px; /* فضای داخلی */
+    text-align: center; /* وسط‌چین کردن متن */
+    border-radius: 60px; /* گوشه‌های گرد */
+    box-shadow: 0px 4px 8px rgba(80, 88, 48, 0.1); /* سایه باکس */
+}
+
+.banner h1 {
+    font-size: 36px;
+    margin-bottom: 20px; /* فاصله زیر عنوان اصلی */
+}
+
+.banner p {
+    font-size: 20px;
+    margin-top: 10px; /* فاصله بالای جمله "20% off" */
+}
+
+nav {
+    background-color: #f5f5f5; /* رنگ پس‌زمینه برای باکس */
+    padding: 0.01px 90px; /* فضای داخلی باکس */
+    border-radius: 10px; /* گوشه‌های گرد */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* سایه باکس */
+    display: flex;
+    justify-content: center; /* وسط‌چین کردن لینک‌ها */
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+}
+nav ul li a:hover {
+    color: #96c477;
+    text-shadow: 1px 1px 2px rgba(220, 255, 116, 0.615);
+}
+
+
+header .logo img {
+    width: 500px; /* سایز لوگو */
+    height: auto; /* حفظ نسبت طول و عرض */
+}
+.features {
+    background-color:  rgb(202, 190, 155);; /* رنگ پس‌زمینه بخش Features */
+    padding: 30px 20px; /* فضای داخلی */
+    display: flex;
+    justify-content: space-around; /* توزیع ویژگی‌ها به صورت یکنواخت */
+    align-items: stretch; /* ارتفاع باکس‌ها را یکسان می‌کند */
+}
+
+.feature-box {
+    background-color: white; /* رنگ پس‌زمینه برای هر باکس ویژگی */
+    padding: 20px;
+    max-width: 300px;
+    max-height: max-content;
+    border-radius: 10px; /* گوشه‌های گرد */
+    box-shadow: 0 4px 8px rgba(124, 134, 65, 0.1); /* سایه برای هر باکس */
+    text-align: center; /* وسط‌چین کردن محتوای هر باکس */
+    margin: 20px; /* فاصله بین باکس‌ها */
+    flex: 1; /* هر باکس به طور مساوی از فضا استفاده می‌کند */
+    display: flex;
+    flex-direction: column; /* محتوا به صورت عمودی داخل باکس‌ها قرار می‌گیرد */
+    justify-content: center; /* برای وسط‌چین کردن عمودی */
+    align-items: center; /* برای وسط‌چین کردن افقی */}
+
+.feature-box img {
+    width: 100%; /* سایز تصویر ویژگی */
+   /* height: auto;
+    object-fit: cover;*/
+    margin-bottom: 30px; /* فاصله بین تصویر و متن */
+    border-radius: 8px;
+}
+
+.feature-box h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.feature-box p {
+    font-size: 16px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between; /* برای فاصله بین لوگو و کپی رایت */
+    align-items: center;
+    padding: 20px; /* برای فاصله‌گذاری کلی */
+    border-top: 1px solid #ccc; /* خطی که بالای کل فوتر می‌خواهید */
+}
+
+footer .footer-logo {
+    margin-left: 20px; /* فاصله لوگو از چپ */
+}
+
+footer .footer-logo img {
+    width: 50px; /* سایز لوگو */
+    height: auto;
+}
+
+footer .copyright {
+    margin-right: 20px; /* فاصله از گوشه راست */
+    font-size: 12px; /* کوچک کردن سایز فونت */
+    text-align: right; /* راست‌چین کردن متن */
+    border-top: 1px solid #ccc; /* خط بالای متن کپی رایت */
+    padding-top: 10px; /* فاصله بین متن و خط */
+}
